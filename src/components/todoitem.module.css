@@ -1,0 +1,18 @@
+.item {
+
+    width: 500px;
+    color: #353935;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.itemName {
+    font-weight: bold;
+    padding: 20px;
+
+
+}
+
+.line {
+    border: 1px solid #dbd0d0f4;
+}
