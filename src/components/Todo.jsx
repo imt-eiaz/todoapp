@@ -14,12 +14,11 @@ export default function Todo() {
     <div>
       <form onSubmit={handleSubmit}>
         <input
-          onChange={(e) => setTodo(e.target.value)}
           type="text"
           value={todo}
-          placeholder="Enter todo here"
+          onChange={(e) => setTodo(e.target.value)}
         />
-        <button type="submit">Add</button>
+        <button>Add</button>
       </form>
       {console.log(todos)}
     </div>
