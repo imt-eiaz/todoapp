@@ -1,15 +1,14 @@
 import { useState } from "react";
+import TodoItem from "./TodoItem";
 
 export default function Todo() {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
-
   function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]);
     setTodo("");
   }
-
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -20,7 +19,9 @@ export default function Todo() {
         />
         <button>Add</button>
       </form>
-      {console.log(todos)}
+      {todos.map((item) => (
+        <TodoItem key={item} item={item} />
+      ))}
     </div>
   );
 }
