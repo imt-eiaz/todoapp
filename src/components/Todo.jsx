@@ -8,7 +8,6 @@ export default function Todo() {
   function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]);
-    setTodo("");
   }
   return (
     <div>
@@ -20,8 +19,9 @@ export default function Todo() {
         />
         <button>Add</button>
       </form>
+
       {todos.map((item) => (
-        <TodoItem key={item} item={item} />
+        <TodoItem item={item} key={item} />
       ))}
     </div>
   );
