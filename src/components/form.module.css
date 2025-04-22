@@ -2,19 +2,19 @@
   background-color: white;
   border-radius: 8px;
   padding: 20px;
-  width: 1200px;
+  /* width: 800px; */
   margin: auto;
-  margin-top: 200px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .modernInput {
-  width: 100%;
+  width: auto;
   border: none;
-  display: block;
-  color: black;
-  font-size: 16px;
-}
+  /* display: block; */
+  color: rgb(0, 0, 0);
+  /* font-size: 16px; */
+} 
 .modernInput:focus {
   outline: none;
 }
@@ -30,5 +30,5 @@
 }
 
 .inputContainer {
-  display: inline;
+  display: flex;
 }
