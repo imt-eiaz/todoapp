@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Todo from "./components/Todo";
+import Greet from "./components/Greet";
 import "./App.css";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <div>
         <Header />
         <Todo />
-        {/* <Student name="Imtiaz" age={40} isReg={true} /> */}
+        {/* <Greet name="Imtiaz" heroName=" Aslam Khan" /> */}
       </div>
     </>
   );
